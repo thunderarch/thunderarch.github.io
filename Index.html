@@ -1,43 +1,67 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: white;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #FFC371, #FF5F6D, #4ECDC4, #6A82FB);
+      color: white;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+    .container {
+      max-width: 600px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      animation: fadeIn 1s ease-out;
+    }
 
-  .card {
-    background: white;
-    color: black;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px;
-    padding: 20px;
-  }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      border-radius: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px;
+      padding: 20px;
+      transition: background 0.3s ease-in-out;
+    }
 
-  .card h1 {
-    font-size: 24px;
-    margin: 0;
-  }
+    .card:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
 
-  .card p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-</style>
+    .card h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .card p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
       <h1>About Me</h1>
-      <p>Hi, I am a tech savvy person who loves to explore new technologies and learn new skills. I am also passionate about music and art, and I enjoy creating and sharing my own works. I am thunder, which means I am powerful, energetic, and confident. I like to take on challenges and overcome obstacles. I am always looking for new opportunities and adventures.</p>
+      <p>Hi, I am a tech-savvy person who loves to explore new technologies and learn new skills. I am also passionate about music and art, and I enjoy creating and sharing my own works. I am thunder, which means I am powerful, energetic, and confident. I like to take on challenges and overcome obstacles. I am always looking for new opportunities and adventures.</p>
     </div>
   </div>
 </body>
